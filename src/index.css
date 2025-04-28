@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.contact-page {
+  background-color: rgb(252, 245, 235);
+  padding-top: 100px;
+}
+
+.contact-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.contact-title {
+  text-align: center;
+  color: #25d366;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input,
+.contact-textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: white;
+  color: #111b21;
+}
+
+.contact-button {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10rem;
+  background-color: #25d366;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    width: 95%;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .contact-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .contact-input {
+    padding: 8px;
+  }
+
+  .contact-textarea {
+    padding: 8px;
+  }
+
+  .contact-button {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}

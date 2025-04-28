@@ -1,13 +1,19 @@
 import React from "react";
 import "../../index.css";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactUsPage() {
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate("/");
+  };
+
   return (
     <div className="contact-page">
       {/* contact us container starts here */}
       <div className="contact-container">
         <h1 className="contact-title">Contact Us</h1>
-        <form className="contact-form">
+        <form onSubmit={handleSubmit} className="contact-form">
           <input
             type="email"
             placeholder="Enter Your Email Address"
